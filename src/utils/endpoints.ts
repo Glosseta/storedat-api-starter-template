@@ -1,0 +1,1 @@
+export const GLOSSETA_API_GRAPHQL_URL = "https://glosseta-api.vercel.app/api/graphql"
