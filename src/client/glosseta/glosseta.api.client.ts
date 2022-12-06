@@ -13,14 +13,15 @@ interface GlossaryTerm {
     category: string,
 }
 
-export const getGlossaryTerm = async (name: string): Promise<GlossaryTerm> => {
+export const getGlossaryTerm = async (name: string, locale: string): Promise<GlossaryTerm> => {
     let glossaryTerm = {} as GlossaryTerm;
 
     try {
         const { data } = await glossetaClient.query({
             query: GET_GLOSSARY_TERM,
             variables: {
-                "name": name
+                "name": name,
+                "locale": locale
             },
         });
 
