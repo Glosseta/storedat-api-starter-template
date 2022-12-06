@@ -33,11 +33,12 @@ export default async function handler(
   // Run the middleware
   await runMiddleware(req, res, cors)
 
-  //Change this to read from req.body in your implementation
-  const searchTerm = "web3"
+  //Change these to read from req.body in your implementation
+  const searchTerm = "web3";
+  const locale = "EN";
 
   try {
-    const glossaryTermResult = await getGlossaryTerm(searchTerm);
+    const glossaryTermResult = await getGlossaryTerm(searchTerm, locale);
 
     res.statusCode = 200;
     res.json({data: {term: glossaryTermResult.name, definition: glossaryTermResult.definition, category: glossaryTermResult.category },  message: 'Term found'})
