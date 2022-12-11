@@ -1,8 +1,9 @@
 import { ApolloClient, InMemoryCache } from "@apollo/client"
 import { GLOSSETA_API_GRAPHQL_URL } from "../../utils/endpoints";
 import { GET_GLOSSARY_TERM } from "../../resources/graphql/queries/GetGlossaryTerm";
-import { Content, GlossaryTerm } from "../../resources/graphql/types/storedat-gql-types";
+import { Content, GlossaryTerm, Sort, TagInput } from "../../resources/graphql/types/storedat-gql-types";
 import { GET_DATA_FROM_FILECOIN } from "../../resources/graphql/queries/GetDataFromFilecoin";
+import { GET_DATA_FROM_ARWEAVE } from "../../resources/graphql/queries/GetDataFromArweave";
 
 const glossetaClient = new ApolloClient({
     uri: GLOSSETA_API_GRAPHQL_URL,
@@ -48,6 +49,29 @@ export const getDataFromFilecoin = async (cid: string): Promise<Content[]> => {
         content = data.GetDataFromFilecoin;
     } catch (error) {
         console.log(`[Unable to find data from Filecoin] cid=${cid}, error=${error.message}`)
+        throw new Error(error)
+    }
+
+    return content;
+}
+
+export const getDataFromArweave = async (targetWalletAddress: string, metadata: TagInput[], sort: Sort, limit: number): Promise<Content[]> => {
+    let content: Content[] = [];
+
+    try {
+        const { data } = await glossetaClient.query({
+            query: GET_DATA_FROM_ARWEAVE,
+            variables: {
+                "targetWalletAddress": targetWalletAddress,
+                "metadata": metadata,
+                "sort": sort,
+                "limit": limit
+            },
+        });
+
+        content = data.GetContentFromArweave;
+    } catch (error) {
+        console.log(`[Unable to find data from Arweave] targetWalletAdress=${targetWalletAddress}, metadata=${metadata}, error=${error.message}`)
         throw new Error(error)
     }
 
