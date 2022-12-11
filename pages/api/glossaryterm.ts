@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 import Cors from 'cors'
-import { getGlossaryTerm } from '../../src/client/glosseta/glosseta.api.client'
+import { getGlossaryTerm } from '../../src/client/storedat/storedat.api.client'
 
 // Initializing the cors middleware
 // You can read more about the available options here: https://github.com/expressjs/cors#configuration-options
@@ -41,7 +41,7 @@ export default async function handler(
     const glossaryTermResult = await getGlossaryTerm(searchTerm, locale);
 
     res.statusCode = 200;
-    res.json({data: {term: glossaryTermResult.name, definition: glossaryTermResult.definition, category: glossaryTermResult.category },  message: 'Term found'})
+    res.json({data: {term: glossaryTermResult.term, definition: glossaryTermResult.definition, category: glossaryTermResult.category, providerId: glossaryTermResult.providerId },  message: 'Term found'})
   } catch (error) {
     res.statusCode = 404;
     res.json({data: {},  message: error.message})
