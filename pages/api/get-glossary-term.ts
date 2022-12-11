@@ -33,7 +33,7 @@ export default async function handler(
   // Run the middleware
   await runMiddleware(req, res, cors)
 
-  //Change these to read from req.body in your implementation
+  //Change these to read/map from req.body in your implementation
   const searchTerm = "web3";
   const locale = "EN";
 

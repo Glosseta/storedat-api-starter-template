@@ -33,7 +33,7 @@ export default async function handler(
   // Run the middleware
   await runMiddleware(req, res, cors)
 
-  //Change this to read from req.body in your implementation
+  //Change this to read/map from req.body in your implementation
   const cid = "bafybeiblwid4hiku2irzabbc6xrri2njpfkt7e4w5ubwpvbzrguugfthze";
 
   try {
