@@ -1,0 +1,6 @@
+generates:
+  ./src/resources/graphql/types/storedat-gql-types.ts:
+    schema: "https://perma.storedat.io/api/graphql"
+    plugins:
+      - typescript
+      - typescript-operations

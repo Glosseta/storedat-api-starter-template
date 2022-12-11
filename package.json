@@ -3,7 +3,8 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "generate-gql": "graphql-codegen"
   },
   "dependencies": {
     "@apollo/client": "^3.7.1",
@@ -14,6 +15,9 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@graphql-codegen/cli": "^2.16.1",
+    "@graphql-codegen/typescript": "^2.8.5",
+    "@graphql-codegen/typescript-operations": "^2.5.10",
     "@types/cors": "^2.8.12",
     "@types/node": "^18.0.1",
     "@types/react": "^18.0.14",
