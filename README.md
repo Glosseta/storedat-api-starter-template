@@ -9,7 +9,7 @@ Use this starter template repo to get going with the [Storedat API](https://stor
 1. Pull the code or fork the code to your computer
 2. Run `yarn` to download the dependencies
 3. Run `yarn generate-gql` to download and create the Storedat GraphQL types
-4. Run `yarn dev` to run the app
+4. Run `yarn dev` to run the app and hit [http://localhost:3000](http://localhost:3000)
 
 ## Endpoints to try out
 
