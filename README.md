@@ -1,6 +1,6 @@
 # Stordat API Starter
 
-Welcome to the starter template repo to get going with the storedat API.  Use this repo to get an understanding of how to integrate the API into your app or use it as a base for your project!
+Welcome to the starter template repo to get going with the [Storedat API](https://storedat.io).  Use this repo to get an understanding of how to integrate the API into your app or use it as a base for your project!
 
 ## How to get started
 
