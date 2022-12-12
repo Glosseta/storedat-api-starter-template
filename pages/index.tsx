@@ -16,6 +16,8 @@ export default function Home() {
           Welcome to <a href="https://storedat.io">Storedat!</a>
         </h1>
 
+        <h2>Web3 Storage made easy</h2>
+
         <div className={styles.grid}>
           <a href="https://docs.storedat.io" className={styles.card}>
             <h2>Documentation &rarr;</h2>
