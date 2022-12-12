@@ -1,1 +1,1 @@
-export const GLOSSETA_API_GRAPHQL_URL = "https://glosseta-api.vercel.app/api/graphql"
+export const GLOSSETA_API_GRAPHQL_URL = "https://perma.storedat.io/api/graphql"

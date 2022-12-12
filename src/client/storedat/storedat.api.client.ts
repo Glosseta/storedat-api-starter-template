@@ -69,7 +69,7 @@ export const getDataFromArweave = async (targetWalletAddress: string, metadata: 
             },
         });
 
-        content = data.GetContentFromArweave;
+        content = data.GetDataFromArweave;
     } catch (error) {
         console.log(`[Unable to find data from Arweave] targetWalletAdress=${targetWalletAddress}, metadata=${metadata}, error=${error.message}`)
         throw new Error(error)

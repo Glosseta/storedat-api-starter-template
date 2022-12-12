@@ -41,10 +41,10 @@ export default async function handler(
     const limit = 1;
 
     try {
-        const fileCoinData = await getDataFromArweave(targetWalletAddress, metadata, sort, limit);
+        const arweaveData = await getDataFromArweave(targetWalletAddress, metadata, sort, limit);
 
         res.statusCode = 200;
-        res.json({ data: { fileCoinData }, message: 'Filecoin data found' })
+        res.json({ data: { arweaveData }, message: 'Arweave data found' })
     } catch (error) {
         res.statusCode = 404;
         res.json({ data: {}, message: error.message })
