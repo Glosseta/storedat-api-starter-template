@@ -17,7 +17,7 @@ After you run the app successfully, try hitting the following endpoints to get a
 
 1. Get Glossary term : [http://localhost:3000/api/get-glossary-term](http://localhost:3000/api/get-glossary-term)
 2. Get Data from Filecoin : [http://localhost:3000/api/get-filecoin-data](http://localhost:3000/api/get-filecoin-data)
-3. 2. Get Data from Arweave : [http://localhost:3000/api/get-arweave-data](http://localhost:3000/api/get-arweave-data)
+3. Get Data from Arweave : [http://localhost:3000/api/get-arweave-data](http://localhost:3000/api/get-arweave-data)
 
 # Storedat documentation
 
