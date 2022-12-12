@@ -1,12 +1,12 @@
 import { ApolloClient, InMemoryCache } from "@apollo/client"
-import { GLOSSETA_API_GRAPHQL_URL } from "../../utils/endpoints";
+import { STOREDAT_API_GRAPHQL_URL } from "../../utils/endpoints";
 import { GET_GLOSSARY_TERM } from "../../resources/graphql/queries/GetGlossaryTerm";
 import { Content, GlossaryTerm, Sort, TagInput } from "../../resources/graphql/types/storedat-gql-types";
 import { GET_DATA_FROM_FILECOIN } from "../../resources/graphql/queries/GetDataFromFilecoin";
 import { GET_DATA_FROM_ARWEAVE } from "../../resources/graphql/queries/GetDataFromArweave";
 
 const glossetaClient = new ApolloClient({
-    uri: GLOSSETA_API_GRAPHQL_URL,
+    uri: STOREDAT_API_GRAPHQL_URL,
     cache: new InMemoryCache(),
 });
 
