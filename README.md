@@ -1,6 +1,8 @@
 # Stordat API Starter
 
-Welcome to the starter template repo to get going with the [Storedat API](https://storedat.io).  Use this repo to get an understanding of how to integrate the API into your app or use it as a base for your project!
+Unleash the power of Web3 storage with a single GraphQL API over decentralized storage providers like Arweave and Filecoin.  [Storedat API](https://storedat.io) is one of the easiest ways to start using decentralized web3 storage without the hassle of managing wallets, signing for transactions, paying for uploads, etc..
+
+Use this starter template repo to get going with the [Storedat API](https://storedat.io).  You can use it to give you an example of how to integrate the API into your app or you can even use it as a base for your own project!
 
 ## How to get started
 
