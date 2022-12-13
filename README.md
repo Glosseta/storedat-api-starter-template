@@ -1,8 +1,8 @@
 # Stordat API Starter
 
-Unleash the power of Web3 storage with a single GraphQL API over decentralized storage providers like Arweave and Filecoin.  [Storedat API](https://storedat.io) is one of the easiest ways to start using decentralized web3 storage without the hassle of managing wallets, signing for transactions, paying for uploads, etc..
+Unleash the power of Web3 storage with a single GraphQL API over decentralized storage providers like Arweave and Filecoin.  [Storedat](https://storedat.io) is a GraphQL API built ontop of existing web3 storage providers like Arweave and Filecoin.  We exist to accelerate the adoption of decentralized storage by providing a provider agnostic way to read and write data with those protocols all the while abstracting away web3 from the user.  No dealing with wallets, signing transactions, storing private keys, paying transactions costs, and so on.  Just plug in and storedat
 
-Use this starter template repo to get going with the [Storedat API](https://storedat.io).  You can use it to give you an example of how to integrate the API into your app or you can even use it as a base for your own project!
+Use this starter template repo to get going with [Storedat](https://storedat.io).  You can use it to give you an example of how to integrate the API into your app or you can even use it as a base for your own project!
 
 ## How to get started
 
