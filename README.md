@@ -21,4 +21,4 @@ After you run the app successfully, try hitting the following endpoints to get a
 
 # Storedat documentation
 
-You can find all the documentation around the API [here](https://docs.storedat.io) or by inspecting the GraphQL docs in the [playground](https://perma.storedat.io/api/graphql)
+You can find all the documentation around the API [here](https://docs.storedat.io) or by inspecting the GraphQL docs in the [playground](https://perma.storedat.io/api/v1/graphql)
